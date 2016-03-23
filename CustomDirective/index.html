@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Jyotsna</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+          <script src="vendor/angular.min.js"></script>
+    </head>
+    <body ng-app="main">
+           <div ng-controller="custDirController" >
+                <cust-dir>
+                    <h1>Custom Directive which embeds data binding expression for an object:</h1>
+                    <h4>Current Customer:</h4>
+                </cust-dir>
+           
+                <div>
+                    <br><h1>Custom Directive which embeds the data binding expression for an array:</h1>
+                    <h4>All Customers:</h4>
+                    <div ng-repeat="cust in customers">
+                        <all-customers name="{{cust.name}}" street="{{cust.street}}">
+
+                        </all-customers>   
+                    </div>
+                </div>
+                
+               <div>
+                   <br /><h1>Custom Directive which repeats template.</h1>
+                   <h3> This Directive has a new child scope that prototypically inherits from parent scope.</h3>
+                   <use-childscope><span>Item: {{message}}</span><br /></use-childscope>
+               </div>
+               
+           </div>
+        
+        <script src="app/main.js"></script>
+        <script src="app/custDirController.js"></script>
+        <script src="app/all-customers.js"></script>
+        <script src="app/use-childscope.js"></script>
+        <script src="app/cust-dir.js"></script>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+form{
+    margin: 20%;
+}
+.container{background-color: darkgrey; margin:0 auto; margin-top:5%; width: 350px; height: 350px;}
+.form-group {margin: 5%;}
+button{margin: 14% 24% 0 34%;}
+.checkbox{margin-left:20%; padding-top: 7%;}

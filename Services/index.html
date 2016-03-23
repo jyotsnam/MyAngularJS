@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="vendor/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="main">
+   
+    <div class="container">
+        <div ng-controller="loginCtrl" ng-include="loginTemplate"></div>
+    </div>
+    
+    <script src="app/main.js"></script>
+    <script src="app/common/common.js"></script>
+    <script src="app/common/APP_CONSTANTS.js"></script>
+    <script src="app/login/login.js"></script>
+    <script src="app/login/loginCtrl.js"></script>
+    <script src="app/service/userService.js"></script>
+</body>
+</html>
